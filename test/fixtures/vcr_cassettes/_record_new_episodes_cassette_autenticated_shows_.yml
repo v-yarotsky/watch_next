@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.myshows.ru/profile/login?login=demo&password=fe01ce2a7fbac8fafaed7c982a04e229
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Cookie:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 09 Mar 2015 07:25:52 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Set-Cookie:
+      - PHPSESSID=aeu257bkbiomhbnnk6970dgc56; path=/
+      - SiteUser[login]=demo; expires=Mon, 30-Mar-2015 07:25:52 GMT; Max-Age=1814400;
+        path=/; httponly
+      - SiteUser[password]=6eca596efe65b5e22d87bce7f2841e91; expires=Mon, 30-Mar-2015
+        07:25:52 GMT; Max-Age=1814400; path=/; httponly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: "                <!DOCTYPE HTML PUBLIC '-//IETF//DTD HTML 2.0//EN'>\r\n
+        \               <html>\r\n                <head><title>200 </title></head>\r\n
+        \               <body><h1></h1></body>\r\n                </html>\r\n            "
+    http_version: 
+  recorded_at: Mon, 09 Mar 2015 07:25:52 GMT
+- request:
+    method: get
+    uri: http://api.myshows.ru/profile/shows/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Cookie:
+      - PHPSESSID=aeu257bkbiomhbnnk6970dgc56; path=/, SiteUser[login]=demo; expires=Mon,
+        30-Mar-2015 07:25:52 GMT; Max-Age=1814400; path=/; httponly, SiteUser[password]=6eca596efe65b5e22d87bce7f2841e91;
+        expires=Mon, 30-Mar-2015 07:25:52 GMT; Max-Age=1814400; path=/; httponly
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 09 Mar 2015 07:25:52 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"4":{"showId":4,"title":"24","ruTitle":"24 \u0447\u0430\u0441\u0430","runtime":43,"showStatus":"TBD\/On
+        The Bubble","watchStatus":"watching","watchedEpisodes":191,"totalEpisodes":204,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/3\/2445.png"},"22410":{"showId":22410,"title":"Black
+        Mirror","ruTitle":"\u0427\u0435\u0440\u043d\u043e\u0435 \u0437\u0435\u0440\u043a\u0430\u043b\u043e","runtime":43,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":6,"totalEpisodes":7,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/31\/30348.jpg"},"14":{"showId":14,"title":"Prison
+        Break","ruTitle":"\u041f\u043e\u0431\u0435\u0433","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":68,"totalEpisodes":79,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/5\/4895.jpg"},"7718":{"showId":7718,"title":"Sherlock","ruTitle":"\u0428\u0435\u0440\u043b\u043e\u043a","runtime":90,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":9,"totalEpisodes":9,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/24\/23433.jpg"},"34":{"showId":34,"title":"South
+        Park","ruTitle":"\u042e\u0436\u043d\u044b\u0439 \u041f\u0430\u0440\u043a","runtime":22,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":6,"totalEpisodes":257,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/6\/5266.jpg"},"15271":{"showId":15271,"title":"\u0418\u043d\u0442\u0435\u0440\u043d\u044b","ruTitle":"","runtime":25,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":80,"totalEpisodes":238,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/28\/27783.jpg"},"10":{"showId":10,"title":"Californication","ruTitle":"\u0411\u043b\u0443\u0434\u043b\u0438\u0432\u0430\u044f
+        \u041a\u0430\u043b\u0438\u0444\u043e\u0440\u043d\u0438\u044f","runtime":28,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":75,"totalEpisodes":84,"rating":3,"image":"http:\/\/images.tvrage.com\/shows\/16\/15319.jpg"},"11945":{"showId":11945,"title":"Game
+        of Thrones","ruTitle":"\u0418\u0433\u0440\u0430 \u043f\u0440\u0435\u0441\u0442\u043e\u043b\u043e\u0432","runtime":55,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":29,"totalEpisodes":40,"rating":3,"image":"http:\/\/images.tvrage.com\/shows\/25\/24493.png"},"25182":{"showId":25182,"title":"The
+        Following","ruTitle":"\u041f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u0438","runtime":43,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":24,"totalEpisodes":32,"rating":3,"image":"http:\/\/images.tvrage.com\/shows\/32\/31672.jpg"},"144":{"showId":144,"title":"True
+        Blood","ruTitle":"\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0430\u044f \u043a\u0440\u043e\u0432\u044c","runtime":53,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":7,"totalEpisodes":80,"rating":3,"image":"http:\/\/images.tvrage.com\/shows\/13\/12662.jpg"},"45":{"showId":45,"title":"Supernatural","ruTitle":"\u0421\u0432\u0435\u0440\u0445\u044a\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435","runtime":43,"showStatus":"Returning
+        Series","watchStatus":"watching","watchedEpisodes":181,"totalEpisodes":209,"rating":2,"image":"http:\/\/images.tvrage.com\/shows\/6\/5410.jpg"},"39":{"showId":39,"title":"Eureka","ruTitle":"\u042d\u0432\u0440\u0438\u043a\u0430","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":43,"totalEpisodes":76,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/8\/7506.jpg"},"20":{"showId":20,"title":"Friends","ruTitle":"\u0414\u0440\u0443\u0437\u044c\u044f","runtime":22,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":112,"totalEpisodes":236,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/4\/3616.jpg"},"11":{"showId":11,"title":"Star
+        Wars: The Clone Wars (2008)","ruTitle":"\u0417\u0432\u0435\u0437\u0434\u043d\u044b\u0435
+        \u0432\u043e\u0439\u043d\u044b: \u0412\u043e\u0439\u043d\u044b \u043a\u043b\u043e\u043d\u043e\u0432","runtime":22,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":110,"totalEpisodes":121,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/20\/19187.jpg"},"23":{"showId":23,"title":"Warehouse
+        13","ruTitle":"\u0425\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0435 13","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":13,"totalEpisodes":61,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/8\/7884.jpg"},"21269":{"showId":21269,"title":"\u0411\u0430\u043d\u0434\u0438\u0442\u0441\u043a\u0438\u0439
+        \u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433","ruTitle":"","runtime":50,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":9,"totalEpisodes":84,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/30\/29702.jpg"},"23690":{"showId":23690,"title":"\u0427\u0435\u0440\u043d\u044b\u0439
+        \u041f\u0438\u0440\u0430\u0442","ruTitle":"","runtime":24,"showStatus":"Canceled\/Ended","watchStatus":"watching","watchedEpisodes":6,"totalEpisodes":6,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/31\/30893.jpg"},"331":{"showId":331,"title":"Doctor
+        Who","ruTitle":"\u0414\u043e\u043a\u0442\u043e\u0440 \u041a\u0442\u043e","runtime":50,"showStatus":"Returning
+        Series","watchStatus":"later","watchedEpisodes":41,"totalEpisodes":103,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/4\/3332.jpg"},"1":{"showId":1,"title":"House","ruTitle":"\u0414\u043e\u043a\u0442\u043e\u0440
+        \u0425\u0430\u0443\u0441","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":152,"totalEpisodes":176,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/4\/3908.jpg"},"23535":{"showId":23535,"title":"Muhtesem
+        Y\u00fczyil","ruTitle":"\u0412\u0435\u043b\u0438\u043a\u043e\u043b\u0435\u043f\u043d\u044b\u0439
+        \u0432\u0435\u043a","runtime":100,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":107,"totalEpisodes":139,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/31\/30839.jpg"},"17123":{"showId":17123,"title":"Touch","ruTitle":"\u0421\u0432\u044f\u0437\u044c","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":0,"totalEpisodes":25,"rating":2,"image":"http:\/\/images.tvrage.com\/shows\/29\/28055.jpg"},"36":{"showId":36,"title":"Firefly","ruTitle":"\u0421\u0432\u0435\u0442\u043b\u044f\u0447\u043e\u043a","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":15,"totalEpisodes":15,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/4\/3548.jpg"},"17483":{"showId":17483,"title":"Once
+        Upon a Time","ruTitle":"\u041e\u0434\u043d\u0430\u0436\u0434\u044b \u0432
+        \u0441\u043a\u0430\u0437\u043a\u0435","runtime":45,"showStatus":"Returning
+        Series","watchStatus":"later","watchedEpisodes":0,"totalEpisodes":80,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/29\/28385.jpg"},"18136":{"showId":18136,"title":"Person
+        of Interest","ruTitle":"\u0412 \u043f\u043e\u043b\u0435 \u0437\u0440\u0435\u043d\u0438\u044f","runtime":43,"showStatus":"Returning
+        Series","watchStatus":"later","watchedEpisodes":19,"totalEpisodes":84,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/29\/28376.jpg"},"412":{"showId":412,"title":"Star
+        Trek: Deep Space Nine","ruTitle":"\u0417\u0432\u0435\u0437\u0434\u043d\u044b\u0439
+        \u043f\u0443\u0442\u044c: \u0414\u0430\u043b\u044c\u043d\u0438\u0439 \u041a\u043e\u0441\u043c\u043e\u0441
+        9","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":176,"totalEpisodes":176,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/6\/5334.jpg"},"19584":{"showId":19584,"title":"The
+        Booth at the End","ruTitle":"\u0421\u0442\u043e\u043b\u0438\u043a \u0432 \u0443\u0433\u043b\u0443","runtime":25,"showStatus":"Canceled\/Ended","watchStatus":"later","watchedEpisodes":0,"totalEpisodes":10,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/29\/28474.jpg"},"5317":{"showId":5317,"title":"The
+        Walking Dead","ruTitle":"\u0425\u043e\u0434\u044f\u0447\u0438\u0435 \u043c\u0435\u0440\u0442\u0432\u0435\u0446\u044b","runtime":45,"showStatus":"Returning
+        Series","watchStatus":"later","watchedEpisodes":56,"totalEpisodes":64,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/26\/25056.png"},"21481":{"showId":21481,"title":"\u0423\u043d\u0438\u0432\u0435\u0440.
+        \u041d\u043e\u0432\u0430\u044f \u043e\u0431\u0449\u0430\u0433\u0430","ruTitle":"","runtime":23,"showStatus":"Returning
+        Series","watchStatus":"later","watchedEpisodes":0,"totalEpisodes":140,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/30\/29881.jpg"},"71":{"showId":71,"title":"How
+        I Met Your Mother","ruTitle":"\u041a\u0430\u043a \u044f \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043b
+        \u0432\u0430\u0448\u0443 \u043c\u0430\u043c\u0443","runtime":22,"showStatus":"Canceled\/Ended","watchStatus":"cancelled","watchedEpisodes":105,"totalEpisodes":208,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/4\/3918.jpg"},"17463":{"showId":17463,"title":"Homeland","ruTitle":"\u0420\u043e\u0434\u0438\u043d\u0430","runtime":60,"showStatus":"Returning
+        Series","watchStatus":"cancelled","watchedEpisodes":0,"totalEpisodes":48,"rating":3,"image":"http:\/\/images.tvrage.com\/shows\/28\/27811.jpg"},"2":{"showId":2,"title":"The
+        Big Bang Theory","ruTitle":"\u0422\u0435\u043e\u0440\u0438\u044f \u0431\u043e\u043b\u044c\u0448\u043e\u0433\u043e
+        \u0432\u0437\u0440\u044b\u0432\u0430","runtime":22,"showStatus":"Returning
+        Series","watchStatus":"cancelled","watchedEpisodes":163,"totalEpisodes":176,"rating":2,"image":"http:\/\/images.tvrage.com\/shows\/9\/8511.jpg"},"13830":{"showId":13830,"title":"Alcatraz","ruTitle":"\u0410\u043b\u044c\u043a\u0430\u0442\u0440\u0430\u0441","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"cancelled","watchedEpisodes":0,"totalEpisodes":13,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/28\/27523.jpg"},"425":{"showId":425,"title":"A
+        Shot at Love with Tila Tequila","ruTitle":"\u0421\u0435\u043a\u0441 \u0441
+        \u0422\u0435\u043a\u0438\u043b\u043e\u0439","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":24,"totalEpisodes":24,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/18\/17604.jpg"},"3":{"showId":3,"title":"Lie
+        to Me","ruTitle":"\u041e\u0431\u043c\u0430\u043d\u0438 \u043c\u0435\u043d\u044f","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":48,"totalEpisodes":48,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/20\/19295.jpg"},"8":{"showId":8,"title":"Lost","ruTitle":"\u041e\u0441\u0442\u0430\u0442\u044c\u0441\u044f
+        \u0432 \u0436\u0438\u0432\u044b\u0445","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":121,"totalEpisodes":121,"rating":5,"image":"http:\/\/images.tvrage.com\/shows\/5\/4284.jpg"},"187":{"showId":187,"title":"Breaking
+        Bad","ruTitle":"\u0412\u043e \u0432\u0441\u0435 \u0442\u044f\u0436\u043a\u0438\u0435","runtime":47,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":62,"totalEpisodes":62,"rating":4,"image":"http:\/\/images.tvrage.com\/shows\/19\/18164.jpg"},"16542":{"showId":16542,"title":"Alphas","ruTitle":"\u041b\u044e\u0434\u0438
+        \u0410\u043b\u044c\u0444\u0430","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":24,"totalEpisodes":24,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/20\/19268.jpg"},"2893":{"showId":2893,"title":"Clara
+        Sheller","ruTitle":"\u0421\u0435\u043a\u0441 \u0432 \u0431\u043e\u043b\u044c\u0448\u043e\u043c
+        \u041f\u0430\u0440\u0438\u0436\u0435","runtime":55,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":12,"totalEpisodes":12,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/21\/20907.jpg"},"113":{"showId":113,"title":"FlashForward","ruTitle":"\u0412\u0441\u043f\u043e\u043c\u043d\u0438,
+        \u0447\u0442\u043e \u0431\u0443\u0434\u0435\u0442","runtime":43,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":22,"totalEpisodes":22,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/21\/20798.jpg"},"203":{"showId":203,"title":"Spider-Man
+        (1994)","ruTitle":"\u0427\u0435\u043b\u043e\u0432\u0435\u043a-\u043f\u0430\u0443\u043a","runtime":22,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":65,"totalEpisodes":65,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/6\/5294.jpg"},"23567":{"showId":23567,"title":"Supernatural
+        Detective Nogami Neuro","ruTitle":"\u041d\u0435\u0439\u0440\u043e \u041d\u043e\u0433\u0430\u043c\u0438:
+        \u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432 \u0438\u0437 \u0410\u0434\u0430","runtime":25,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":25,"totalEpisodes":25,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/31\/30857.jpg"},"20307":{"showId":20307,"title":"\u0424\u0438\u0437\u0438\u043a\u0430
+        \u0438\u043b\u0438 \u0445\u0438\u043c\u0438\u044f","ruTitle":"","runtime":48,"showStatus":"Canceled\/Ended","watchStatus":"finished","watchedEpisodes":20,"totalEpisodes":20,"rating":0,"image":"http:\/\/images.tvrage.com\/shows\/30\/29416.jpg"}}'
+    http_version: 
+  recorded_at: Mon, 09 Mar 2015 07:25:52 GMT
+recorded_with: VCR 2.9.3

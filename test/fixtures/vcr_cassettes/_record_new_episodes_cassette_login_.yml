@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.myshows.ru/profile/login?login=demo&password=fe01ce2a7fbac8fafaed7c982a04e229
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Cookie:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 09 Mar 2015 07:25:51 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Set-Cookie:
+      - PHPSESSID=5dbj7pnk1a1c47f5hjal2m5th6; path=/
+      - SiteUser[login]=demo; expires=Mon, 30-Mar-2015 07:25:51 GMT; Max-Age=1814400;
+        path=/; httponly
+      - SiteUser[password]=6eca596efe65b5e22d87bce7f2841e91; expires=Mon, 30-Mar-2015
+        07:25:51 GMT; Max-Age=1814400; path=/; httponly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: "                <!DOCTYPE HTML PUBLIC '-//IETF//DTD HTML 2.0//EN'>\r\n
+        \               <html>\r\n                <head><title>200 </title></head>\r\n
+        \               <body><h1></h1></body>\r\n                </html>\r\n            "
+    http_version: 
+  recorded_at: Mon, 09 Mar 2015 07:25:51 GMT
+recorded_with: VCR 2.9.3
