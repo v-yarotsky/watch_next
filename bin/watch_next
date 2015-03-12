@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+# vim: set ft=ruby
+
+$:.unshift File.expand_path("../../lib", __FILE__)
+
+require 'digest/md5'
+require 'watch_next'
+require 'time'
+
+username = ARGV[0]
+password = Digest::MD5.hexdigest(ARGV[1])
+client = WatchNext::MyshowsClient.new(username, password)
+unwatched_episodes = client.unwatched_episodes
+shows_by_id = client.shows.each_with_object({}) { |show, result| result[show.id] = show }
+
+unwatched_episodes.group_by(&:show_id).map do |show_id, episodes|
+  sorted_episodes = episodes.sort_by { |e| Time.parse(e.air_date) }
+  last_episode = sorted_episodes.last
+
+  printf "%-35s: %02dx%02d - %-30s (%s)\n",
+    shows_by_id.fetch(show_id).title,
+    last_episode.season_number,
+    last_episode.episode_number,
+    last_episode.title,
+    last_episode.air_date
+
+  if sorted_episodes.length > 1
+    sorted_episodes.reverse_each.to_a[1..2].each do |episode|
+      printf "%-35s: %02dx%02d - %-30s (%s)\n",
+        "",
+        episode.season_number,
+        episode.episode_number,
+        episode.title,
+        episode.air_date
+    end
+  end
+end
